@@ -43,3 +43,16 @@ dependencies {
     // Okhttp3 for the POST requests
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.myinnos'
+                artifactId = 'connection'
+                version = '1.0'
+            }
+        }
+    }
+}
