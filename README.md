@@ -1,4 +1,6 @@
-# SDK to Send WhatsApp Messages using the WhatsApp API
+# Send WhatsApp Messages using the SDK
+
+Use this Android SDK to Send WhatsApp Messages using the WhatsApp API
 
 **Note:** please follow this(coming soon) article to generate token and other information in fb developer account
 
@@ -21,7 +23,7 @@ dependencies {
 ```
 How to use
 -----
-**Step 2:** implement App Icon Name Changer method : [#Example]("https://github.com/myinnos/WhatsApp-SDK/blob/main/app/src/main/java/in/myinnos/whatsappsdk/MainActivity.kt")
+**Step 2:** implement App Icon Name Changer method : [#Example - MainActivity.kt](https://github.com/myinnos/WhatsApp-Android-SDK/blob/main/app/src/main/java/in/myinnos/whatsappsdk/MainActivity.kt)
 ```kotlin
 WPayInitialization.sendMessage(
                 "token", //token
@@ -41,7 +43,7 @@ WPayInitialization.sendMessage(
                 }
             }
 ```
-##### Any Queries? or Feedback, please let me know by opening a [new issue](https://github.com/myinnos/WhatsApp-SDK/issues/new)!
+##### Any Queries? or Feedback, please let me know by opening a [new issue](https://github.com/myinnos/WhatsApp-Android-SDK/issues/new)!
 
 ## Contact
 #### Prabhakar Thota
