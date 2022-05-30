@@ -4,6 +4,8 @@ Use this Android SDK to Send WhatsApp Messages using the WhatsApp API
 
 **Note:** please follow [#medium](https://myinnos.medium.com/send-whatsapp-messages-using-the-android-sdk-dd3b8bb9ab6a) / [#hashnode](https://prabhakarthota.dev/send-whatsapp-messages-using-the-android-sdk) / [#dev.to](https://dev.to/myinnos/send-whatsapp-messages-using-the-android-sdk-129j) article to generate token and other information in fb developer account
 
+![maxresdefault](https://user-images.githubusercontent.com/15339591/170928516-1232e15a-0f8a-485c-bc7b-8e9d572972cf.jpeg)
+
 #### Kindly use the following links to use this library:
 
 In settings.gradle (Project)
