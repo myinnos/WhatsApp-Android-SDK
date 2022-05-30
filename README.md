@@ -18,7 +18,7 @@ dependencyResolutionManagement {
 And then in the other gradle file(may be your app gradle or your own module library gradle, but never add in both of them to avoid conflict.)
 ```kotlin	
 dependencies {
-	implementation 'com.github.myinnos:WhatsApp-SDK:1.0.2'
+	implementation 'com.github.myinnos:WhatsApp-SDK:<latest-version>'
 }
 ```
 How to use
