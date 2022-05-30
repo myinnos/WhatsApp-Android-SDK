@@ -25,7 +25,7 @@ How to use
 -----
 **Step 2:** implement App Icon Name Changer method : [#Example - MainActivity.kt](https://github.com/myinnos/WhatsApp-Android-SDK/blob/main/app/src/main/java/in/myinnos/whatsappsdk/MainActivity.kt)
 ```kotlin
-WPayInitialization.sendMessage(
+WhatsAppInitialization.sendMessage(
                 "token", //token
                 "version", //ex: v13.0
                 "phone_number_id", //ex: 103075932423434
