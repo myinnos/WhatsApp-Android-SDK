@@ -2,7 +2,7 @@ package `in`.myinnos.wpaysdk
 
 import `in`.myinnos.wpaysdk.model.WResults
 import `in`.myinnos.wpaysdk.retro.RetrofitHelper
-import `in`.myinnos.wpaysdk.retro.WPayAPI
+import `in`.myinnos.wpaysdk.retro.WAPI
 import android.util.Log
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -11,7 +11,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 
 
-class WPayInitialization {
+class WhatsAppInitialization {
 
     companion object {
         fun sendMessage(
@@ -19,7 +19,7 @@ class WPayInitialization {
             toPhoneNumber: String, templateName: String, languageCode: String,
             callback: (wResult: WResults?) -> Unit
         ) {
-            val wPayAPI = RetrofitHelper.getInstance().create(WPayAPI::class.java)
+            val wPayAPI = RetrofitHelper.getInstance().create(WAPI::class.java)
 
             // Create JSON using JSONObject
             val jsonObject = JSONObject()

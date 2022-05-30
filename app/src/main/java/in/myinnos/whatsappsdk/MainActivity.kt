@@ -1,7 +1,7 @@
 package `in`.myinnos.whatsappsdk
 
 import `in`.myinnos.whatsappsdk.databinding.ActivityMainBinding
-import `in`.myinnos.wpaysdk.WPayInitialization
+import `in`.myinnos.wpaysdk.WhatsAppInitialization
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btSend.setOnClickListener {
 
-            WPayInitialization.sendMessage(
+            WhatsAppInitialization.sendMessage(
                 "Token", //token
                 "version", //v13.0
                 "phone_number_id", //103075932423434
