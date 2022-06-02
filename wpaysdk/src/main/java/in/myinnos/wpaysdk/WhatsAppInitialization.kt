@@ -63,7 +63,7 @@ class WhatsAppInitialization {
                 if (result.code() == 400) {
                     val jsonObj = JSONObject(result.errorBody()!!.charStream().readText())
                     Log.d("WHATSAPP_SDK", "ERROR_MESSAGE: $jsonObj")
-                     wResults.setMessage("MESSAGE SENT FAILED: CHECK THE LOGS")
+                    wResults.setMessage("MESSAGE SENT FAILED: CHECK THE LOGS")
                 } else {
                     Log.d("WHATSAPP_SDK", "MESSAGE_SENT")
                     wResults.setMessage("MESSAGE SUCCESSFULLY SENT!")
