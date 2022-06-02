@@ -4,6 +4,8 @@ import `in`.myinnos.wpaysdk.model.WResults
 import `in`.myinnos.wpaysdk.retro.RetrofitHelper
 import `in`.myinnos.wpaysdk.retro.WAPI
 import android.util.Log
+import androidx.annotation.NonNull
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -13,11 +15,16 @@ import org.json.JSONObject
 
 class WhatsAppInitialization {
 
+    @DelicateCoroutinesApi
     companion object {
         fun sendMessage(
-            bearerToken: String, version: String, phoneNumberID: String,
-            toPhoneNumber: String, templateName: String, languageCode: String,
-            callback: (wResult: WResults?) -> Unit
+            @NonNull bearerToken: String,
+            @NonNull version: String,
+            @NonNull phoneNumberID: String,
+            @NonNull toPhoneNumber: String,
+            @NonNull templateName: String,
+            @NonNull languageCode: String,
+            @NonNull callback: (wResult: WResults?) -> Unit
         ) {
             val wPayAPI = RetrofitHelper.getInstance().create(WAPI::class.java)
 
@@ -50,20 +57,19 @@ class WhatsAppInitialization {
                 )
                 //Log.d("WHATSAPP_SDK", result.raw().request.url.toString())
                 //Log.d("WHATSAPP_SDK", result.raw().request.headers.toString())
-                Log.d("WHATSAPP_SDK", "RESPONSE_CODE: ${result.code()}");
+                Log.d("WHATSAPP_SDK", "RESPONSE_CODE: ${result.code()}")
 
                 val wResults = WResults()
                 if (result.code() == 400) {
                     val jsonObj = JSONObject(result.errorBody()!!.charStream().readText())
-                    Log.d("WHATSAPP_SDK", "ERROR_MESSAGE: $jsonObj");
-                    wResults.setMessage("MESSAGE SENT FAILED: CHECK THE LOGS")
+                    Log.d("WHATSAPP_SDK", "ERROR_MESSAGE: $jsonObj")
+                     wResults.setMessage("MESSAGE SENT FAILED: CHECK THE LOGS")
                 } else {
-                    Log.d("WHATSAPP_SDK", "MESSAGE_SENT");
+                    Log.d("WHATSAPP_SDK", "MESSAGE_SENT")
                     wResults.setMessage("MESSAGE SUCCESSFULLY SENT!")
                 }
 
                 callback(wResults)
-
             }
         }
     }

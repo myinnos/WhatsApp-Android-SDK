@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp">
@@ -17,29 +18,33 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/whatsapp" />
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/whatsapp"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <EditText
             android:id="@+id/etNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:autofillHints="phone"
             android:background="@color/white"
-            android:gravity="left"
-            android:hint="Enter Phone Number"
+            android:gravity="start"
+            android:hint="@string/enter_phone_number"
             android:inputType="number"
             android:padding="16dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black_transparent"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="@tools:sample/us_phones" />
 
         <Button
             android:id="@+id/btSend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="SEND MESSAGE"
+            android:hint="@string/send_message"
             android:padding="16dp"
             android:textColor="@color/white"
             android:textSize="16sp"
