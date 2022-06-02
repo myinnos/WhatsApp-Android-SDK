@@ -2,7 +2,9 @@
 
 Use this Android SDK to Send WhatsApp Messages using the WhatsApp API
 
-**Note:** please follow this(coming soon) article to generate token and other information in fb developer account
+**Note:** please follow [#medium](https://myinnos.medium.com/send-whatsapp-messages-using-the-android-sdk-dd3b8bb9ab6a) / [#hashnode](https://prabhakarthota.dev/send-whatsapp-messages-using-the-android-sdk) / [#dev.to](https://dev.to/myinnos/send-whatsapp-messages-using-the-android-sdk-129j) article to generate token and other information in fb developer account
+
+![maxresdefault](https://user-images.githubusercontent.com/15339591/170928516-1232e15a-0f8a-485c-bc7b-8e9d572972cf.jpeg)
 
 #### Kindly use the following links to use this library:
 
@@ -18,14 +20,14 @@ dependencyResolutionManagement {
 And then in the other gradle file(may be your app gradle or your own module library gradle, but never add in both of them to avoid conflict.)
 ```kotlin	
 dependencies {
-	implementation 'com.github.myinnos:WhatsApp-SDK:1.0.2'
+	implementation 'com.github.myinnos:WhatsApp-SDK:<latest-version>'
 }
 ```
 How to use
 -----
 **Step 2:** implement App Icon Name Changer method : [#Example - MainActivity.kt](https://github.com/myinnos/WhatsApp-Android-SDK/blob/main/app/src/main/java/in/myinnos/whatsappsdk/MainActivity.kt)
 ```kotlin
-WPayInitialization.sendMessage(
+WhatsAppInitialization.sendMessage(
                 "token", //token
                 "version", //ex: v13.0
                 "phone_number_id", //ex: 103075932423434
@@ -53,7 +55,7 @@ WPayInitialization.sendMessage(
 * :thumbsup: Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on Twitter")   
 * :camera: Instagram: [@prabhakar_t_](https://www.instagram.com/prabhakar_t_/ "Prabhakar Thota on Instagram")   
 
-> If you appreciate my work, consider buying me a cup of :coffee: to keep me recharged :metal: by [PayPal](https://www.paypal.me/fansfolio)
+>⚡ If you appreciate my work, consider buying me a cup of :coffee: to keep me recharged :metal: by [GitHub](https://github.com/sponsors/myinnos) or [PayPal](https://www.paypal.me/fansfolio)
 
 License
 -------
