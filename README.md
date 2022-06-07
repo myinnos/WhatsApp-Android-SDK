@@ -2,6 +2,8 @@
 
 Use this Android SDK to Send WhatsApp Messages using the WhatsApp API
 
+[![](https://jitpack.io/v/myinnos/WhatsApp-Android-SDK.svg)](https://jitpack.io/#myinnos/WhatsApp-Android-SDK) [![MyInnos website](https://img.shields.io/badge/visit-website-red.svg?logo=firefox)](https://www.myinnos.in/) [![](https://jitpack.io/v/jitpack/maven-simple/month.svg)](https://jitpack.io/#myinnos/WhatsApp-Android-SDK) <a href="#"><img alt="Android Language Badge" src="https://badgen.net/badge/OS/Android?icon=https://raw.githubusercontent.com/androiddevnotes/awesome-jetpack-compose-android-apps/master/assets/android.svg&color=3ddc84"/></a>
+
 **Note:** please follow [#medium](https://myinnos.medium.com/send-whatsapp-messages-using-the-android-sdk-dd3b8bb9ab6a) / [#hashnode](https://prabhakarthota.dev/send-whatsapp-messages-using-the-android-sdk) / [#dev.to](https://dev.to/myinnos/send-whatsapp-messages-using-the-android-sdk-129j) article to generate token and other information in fb developer account
 
 ![maxresdefault](https://user-images.githubusercontent.com/15339591/170928516-1232e15a-0f8a-485c-bc7b-8e9d572972cf.jpeg)
