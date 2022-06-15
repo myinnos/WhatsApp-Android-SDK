@@ -47,6 +47,7 @@ WhatsAppInitialization.sendMessage(
                 }
             }
 ```
+
 ##### Any Queries? or Feedback, please let me know by opening a [new issue](https://github.com/myinnos/WhatsApp-Android-SDK/issues/new)!
 
 ## Contact
